@@ -1,0 +1,13 @@
+
+This is the code accompanying the manuscript titled "The probability distribution of the reconstructed phylogenetic tree withoccurrence data" by Ankit Gupta, Marc Manceau, Timothy Vaughan, Mustafa Khammash and Tanja Stadler. It contains the following:
+
+1. LikelihoodEstimation.m -  the main Matlab script which analytically computes the log-likelihood or log-probability as described in the paper and compares it with the particle filter estimated likelihood value.
+
+2. ParticleFilter.cpp - contains the C++ code for the particle filter estimator as described in the paper "Estimating epidemic incidence and prevalence from genomic data" by Vaughan, T.G., Leventhal, G.E., Rasmussen, D.A., Drummond, A.J., Welch, D., Stadler, T., 2018. Molecular Biology and Evolution, msz106, //https://doi.org/10.1093/molbev/msz106.
+
+3. BirthDeath.h -  is the header file needed by the C++ code. One can specify  parameters such as no. of particles, maximum no. of lineages etc. in this file.
+
+4. ExampleTrees - it is the folder containing some tree examples as text files. Examples 1 and 2 in the paper correspond to Tree4 and Tree2 respectively. In all these examples, the tree events are specified by a two-column table with the first entry being time in the past and the second entry being the event code (0 -Branching, 1 - psi-death with sampling, 2 - omega-occurrence event, 3 - origin). The rho-sampling at the present time is included by default and it doesn't need to be specified.
+
+
+

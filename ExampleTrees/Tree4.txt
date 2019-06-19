@@ -1,0 +1,7 @@
+Time Event Code (0 -Branching, 1 - psi-death with sampling, 2 - omega-occurrence event, 3 - origin)
+
+0.1 2
+0.3 2
+0.4 1
+0.6 0
+1   3
